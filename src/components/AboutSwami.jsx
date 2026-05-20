@@ -113,10 +113,18 @@ export default function AboutSwami() {
             </ul>
 
             <div style={{ display:'flex',gap:16,flexWrap:'wrap' }}>
-              <Link to="/services" style={{
+              <Link to="/about" style={{
                 display:'inline-flex',alignItems:'center',gap:8,
                 padding:'13px 26px',borderRadius:12,background:'#0a0f1e',
                 color:'white',fontWeight:600,fontSize:14,textDecoration:'none',
+              }}>
+                Our Story <ArrowRight size={15}/>
+              </Link>
+              <Link to="/services" style={{
+                display:'inline-flex',alignItems:'center',gap:8,
+                padding:'13px 26px',borderRadius:12,
+                border:'1px solid #e5e7eb',
+                color:'#374151',fontWeight:600,fontSize:14,textDecoration:'none',
               }}>
                 Our Services <ArrowRight size={15}/>
               </Link>

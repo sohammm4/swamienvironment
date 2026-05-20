@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Leaf, Mail, Phone, MapPin } from 'lucide-react'
+import { Leaf, Mail, Phone } from 'lucide-react'
 
 const quickLinks = [
   { label:'Home', to:'/' }, { label:'Services', to:'/services' },
@@ -30,7 +30,7 @@ export default function Footer() {
             <p style={{ color:'#6b7280',fontSize:13,lineHeight:1.7,marginBottom:20 }}>
               India's trusted partner for ESG consulting, environmental intelligence, and sustainability transformation.
             </p>
-            <div style={{ display:'flex',gap:8 }}>
+            <div style={{ display:'flex',gap:8,flexWrap:'wrap' }}>
               {socials.map(name=>(
                 <a key={name} href="#" style={{ padding:'6px 12px',borderRadius:8,border:'1px solid rgba(255,255,255,0.1)',color:'#6b7280',fontSize:11,fontWeight:500,textDecoration:'none' }}>{name}</a>
               ))}
@@ -57,24 +57,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact — no location, updated phone and email */}
           <div>
             <h4 style={{ color:'white',fontSize:13,fontWeight:600,marginBottom:20,letterSpacing:'0.05em' }}>Contact</h4>
             <div style={{ display:'flex',flexDirection:'column',gap:16 }}>
-              <div style={{ display:'flex',gap:12,alignItems:'flex-start' }}>
-                <MapPin size={14} color="#10b981" style={{ flexShrink:0,marginTop:2 }}/>
-                <span style={{ color:'#6b7280',fontSize:13,lineHeight:1.6 }}>SCO 112, Sector 34-A,<br/>Chandigarh — 160022, India</span>
-              </div>
               <div style={{ display:'flex',gap:12,alignItems:'center' }}>
                 <Phone size={14} color="#10b981" style={{ flexShrink:0 }}/>
-                <a href="tel:+911722345678" style={{ color:'#6b7280',fontSize:13,textDecoration:'none' }}>+91 172 234 5678</a>
+                <a href="tel:+919323678528" style={{ color:'#6b7280',fontSize:13,textDecoration:'none' }}>
+                  +91 93236 78528
+                </a>
               </div>
               <div style={{ display:'flex',gap:12,alignItems:'center' }}>
                 <Mail size={14} color="#10b981" style={{ flexShrink:0 }}/>
-                <a href="mailto:info@swamienvironment.com" style={{ color:'#6b7280',fontSize:13,textDecoration:'none' }}>info@swamienvironment.com</a>
+                <a href="mailto:swamienvironment1@gmail.com" style={{ color:'#6b7280',fontSize:13,textDecoration:'none' }}>
+                  swamienvironment1@gmail.com
+                </a>
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Bottom */}

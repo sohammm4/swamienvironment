@@ -1,11 +1,12 @@
 // src/pages/Home.jsx
 import React from 'react'
-import Hero          from '../components/Hero'
-import Services      from '../components/Services'
+import Hero           from '../components/Hero'
+import Services       from '../components/Services'
 import SafetyServices from '../components/SafetyServices'
-import About         from '../components/About'
-import Dashboard     from '../components/Dashboard'
-import CaseStudies   from '../components/CaseStudies'
+import AboutSwami     from '../components/AboutSwami'
+import WhyChooseUs    from '../components/WhyChooseUs'
+import About          from '../components/About'
+import Dashboard      from '../components/Dashboard'
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       <Hero />
       <Services />
       <SafetyServices />
+      <AboutSwami />
+      <WhyChooseUs />
       <About />
       <Dashboard />
-      <CaseStudies />
     </>
   )
 }

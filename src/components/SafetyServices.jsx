@@ -9,10 +9,10 @@ import { serviceCategories } from '../data/servicesData'
 const safetyCategory = serviceCategories.find(c => c.id === 'safety')
 
 const stats = [
-  { value:'500+', label:'Sites Audited' },
-  { value:'10K+', label:'Professionals Trained' },
+  { value:'100+', label:'Sites Audited' },
+  { value:'5K+',  label:'Professionals Trained' },
   { value:'Zero', label:'Incident Goal' },
-  { value:'ISO',  label:'45001 Experts' },
+  { value:'ISO',  label:'45001 & 14001 Experts' },
 ]
 
 export default function SafetyServices() {
