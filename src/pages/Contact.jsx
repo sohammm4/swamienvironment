@@ -64,7 +64,7 @@ export default function Contact() {
     setLoading(true)
     setError('')
     try {
-      const res = await fetch('https://swamienvironment-backend-1.onrender.com', {
+      const res = await fetch('https://swamienvironment-backend-1.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type':'application/json' },
         body: JSON.stringify(form),
