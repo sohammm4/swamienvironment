@@ -68,6 +68,7 @@ export default function Contact() {
         method: 'POST',
         headers: { 'Content-Type':'application/json' },
         body: JSON.stringify(form),
+        signal: AbortSignal.timeout(120000), // wait 2 minutes
       })
       const data = await res.json()
       if (data.success) {
